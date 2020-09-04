@@ -1,0 +1,841 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="554.9999999999999" scrolly="264" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="W/eXnqP^c}303%e!8%nb" x="-590" y="-250">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="460.86156142653635" scrolly="-847.9521743682458" scale="0.8227024747918819">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="=AhL]2@zMA_2MTlwedf}" type="">saved_conf_url</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="6k*3ZUwfKr[MIqVvhnp;" x="-550" y="-253">
+      <mutation else="1"/>
+      <value name="IF0">
+        <block type="dictGet" id="TR[|*t)7x5-?,nZ-?ewk">
+          <value name="DICT">
+            <block type="getUrlData" id="f1ZlK8H%Z11Mc!`o:LoW">
+              <field name="KIND">PARAMS</field>
+              <field name="PARENT">FALSE</field>
+            </block>
+          </value>
+          <value name="KEY">
+            <shadow type="text" id="zWLlOxx[B@zFj|N3Ri](">
+              <field name="TEXT">image_url</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="loadFile" id="0#o=J[O;FC@uO0~rAe;c">
+          <value name="URL">
+            <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+              <field name="TEXT">./mydata.txt</field>
+            </shadow>
+            <block type="dictGet" id="DM]kUC71(8E@;f_:UPHF">
+              <value name="DICT">
+                <block type="getUrlData" id="@gm12gIp$kUZ[vDcGDUs">
+                  <field name="KIND">PARAMS</field>
+                  <field name="PARENT">FALSE</field>
+                </block>
+              </value>
+              <value name="KEY">
+                <shadow type="text" id="Miu[r|Fb7rBK7QNMQ68v">
+                  <field name="TEXT">image_url</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="replaceTexture" id="TI5mAk$@dl|eh3d-{2x]">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">payoneer-vector-logo-small.png</field>
+              <value name="MATERIAL">
+                <block type="materialList" id="k)6l`57HtD)CqRbY%JPE">
+                  <field name="FIELDNAME">m_mk_01</field>
+                </block>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                  <field name="TEXT">./newTexture.png</field>
+                </shadow>
+                <block type="loadedFile" id="7%c*Yqe6%Rs^,}YDqWdC"/>
+              </value>
+              <statement name="DO">
+                <block type="setTimeout" id="lx6-CV.x*sxwhW7+@K(F">
+                  <value name="VALUE">
+                    <shadow type="math_number" id="]Xpg6h_?:(!uHfD=I48C">
+                      <field name="NUM">0.1</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="setHTMLElemStyle" id="-SEn:27]tf-!(yq6YeE3">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="|j{0izM}NiiqHO,byL2`">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <block type="text" id="uR+R:c[vq/C;Mv2q7(r=">
+                          <field name="TEXT">hider</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+              <next>
+                <block type="replaceTexture" id="tWt/{/zCi))8USqB,x*t">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">payoneer-vector-logo-small.png</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id="M*+FXt7IKdDiUE:P6:XX">
+                      <field name="FIELDNAME">m_mk_02</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                      <field name="TEXT">./newTexture.png</field>
+                    </shadow>
+                    <block type="loadedFile" id="ru`LHJN6BhXOs=d}LNP["/>
+                  </value>
+                  <statement name="DO">
+                    <block type="setTimeout" id="mF#n=Qhz;?$|c(A,+q_%">
+                      <value name="VALUE">
+                        <shadow type="math_number" id="A4j[B$W!uPO*RC^xzvjH">
+                          <field name="NUM">0.1</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="setHTMLElemStyle" id="HCcxCRXtMbH=db$zrIfb">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="M?;Pn$aM`f=Zv2A#YtWJ">
+                              <field name="TEXT">none</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <block type="text" id="6mhp#[F=5nt%.[t9/u-j">
+                              <field name="TEXT">hider</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <statement name="ELSE">
+        <block type="setHTMLElemStyle" id="P1KDK(-5}M*#ck(,LeeA">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="fIzrpw)2^|n^wqx)F)Aj">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="+gR9d#}6WghR;=@K)f,u">
+              <field name="TEXT">hider</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="variables_set" id="I^Eqy=wHog7oJF1@(-vZ">
+          <field name="VAR" id="=AhL]2@zMA_2MTlwedf}">saved_conf_url</field>
+          <value name="VALUE">
+            <block type="getUrlData" id=".,OmLe%*p9Z{Afhhk;+n">
+              <field name="KIND">URL</field>
+              <field name="PARENT">FALSE</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="1Hx{AfexG~I=3Ox#Evyt" x="-550" y="310">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="]`an#cbe^LZ*8HRb|x/.">
+          <field name="FIELDNAME">mockup_01_logo</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="openFile" id="9BN!yAB7tZ-#3;.uQcgt">
+          <statement name="DO">
+            <block type="replaceTexture" id="unbfxq8`4S%6pk51lQ8f">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">payoneer-vector-logo-small.png</field>
+              <value name="MATERIAL">
+                <block type="materialList" id="8Dm/KGOGf)Ae@}rt|;=b">
+                  <field name="FIELDNAME">m_mk_01</field>
+                </block>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                  <field name="TEXT">./newTexture.png</field>
+                </shadow>
+                <block type="openedFile" id=".R(]XAh9@HqqrSZ]gUk$"/>
+              </value>
+              <next>
+                <block type="replaceTexture" id="]dSdHpsX(3`;{4TeF^E*">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">payoneer-vector-logo-small.png</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id="UXVPj@@%Igr6:?r7{y!U">
+                      <field name="FIELDNAME">m_mk_02</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                      <field name="TEXT">./newTexture.png</field>
+                    </shadow>
+                    <block type="openedFile" id="LUZ4}]MRtSa[wg_?GPd8"/>
+                  </value>
+                  <next>
+                    <block type="sendData" id=",}Ebp6{bT/|Kea#N@K%`">
+                      <value name="DATA">
+                        <block type="openedFile" id="nhlnQ/fT)9lNcsBX{4LZ"/>
+                      </value>
+                      <value name="URL">
+                        <shadow type="text" id="Vf1dUsMW(ct?K)2!u1CQ">
+                          <field name="TEXT">https://sandbox.soft8soft.com/wp-json/verge3d/v1/upload_file/</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="variables_set" id="or68vBGM(yUXZE%mUU29">
+                          <field name="VAR" id="=AhL]2@zMA_2MTlwedf}">saved_conf_url</field>
+                          <value name="VALUE">
+                            <block type="setUrlParam" id="Qm)!nf[=70@I5S}wQ[lv">
+                              <value name="URL">
+                                <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                  <field name="TEXT">https://sandbox.soft8soft.com/</field>
+                                </shadow>
+                                <block type="getUrlData" id="v5KH6e+{g`=5keB_TRbA">
+                                  <field name="KIND">URL</field>
+                                  <field name="PARENT">FALSE</field>
+                                </block>
+                              </value>
+                              <value name="NAME">
+                                <shadow type="text" id="Y1r(AG|8kCnR.sN2$rfi">
+                                  <field name="TEXT">image_url</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE">
+                                <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                  <field name="TEXT"></field>
+                                </shadow>
+                                <block type="dictGet" id="[kTI`Lvd,r7/f#NLrjOA">
+                                  <value name="DICT">
+                                    <block type="loadedFile" id="QaCggWu7@Wx4PyLPF@@D"/>
+                                  </value>
+                                  <value name="KEY">
+                                    <shadow type="text" id="_GQQGI0bmn4-P6Bxy9IL">
+                                      <field name="TEXT">link</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="openWebPage" id="*x65tN)kI[{agDbP$[EG">
+                              <field name="MODE">NO_RELOAD</field>
+                              <value name="URL">
+                                <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                  <field name="TEXT">https://www.soft8soft.com/</field>
+                                </shadow>
+                                <block type="variables_get" id="[5v3iE-(IUYH,CH.^KdX">
+                                  <field name="VAR" id="=AhL]2@zMA_2MTlwedf}">saved_conf_url</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <next>
+        <block type="whenClicked" id="C;+A7sOvpfMlKe4b)u~3">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+          <value name="VALUE">
+            <block type="objectList" id="~MCp78qdT3@r.^M6%.Ci">
+              <field name="FIELDNAME">mockup_02_logo</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="openFile" id="5Yi3|uN;M!9Z3V2QJwT0">
+              <statement name="DO">
+                <block type="replaceTexture" id="InDawi8`WTElpg#;l=~O">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">payoneer-vector-logo-small.png</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id="r/fNeu7EX^``i9W[ipgK">
+                      <field name="FIELDNAME">m_mk_01</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                      <field name="TEXT">./newTexture.png</field>
+                    </shadow>
+                    <block type="openedFile" id="Egf1j;`G~v0lOFh4ZI4W"/>
+                  </value>
+                  <next>
+                    <block type="replaceTexture" id="`H|z[7s2sAEtE@?4l{-x">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">payoneer-vector-logo-small.png</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="[tIKX%l!D(,q*f92;qi3">
+                          <field name="FIELDNAME">m_mk_02</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                          <field name="TEXT">./newTexture.png</field>
+                        </shadow>
+                        <block type="openedFile" id="?@p5R@5Dz$vs5EH,Bg[|"/>
+                      </value>
+                      <next>
+                        <block type="sendData" id="_J-;QP6FF8lj_GCqqqMz">
+                          <value name="DATA">
+                            <block type="openedFile" id="|}{q]l5E9=e,8T$1Hu%X"/>
+                          </value>
+                          <value name="URL">
+                            <shadow type="text" id="ijDuTztj]nG|#kGAFKh;">
+                              <field name="TEXT">https://sandbox.soft8soft.com/wp-json/verge3d/v1/upload_file/</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="variables_set" id="`5rX,V|2@l~hc#10;$sV">
+                              <field name="VAR" id="=AhL]2@zMA_2MTlwedf}">saved_conf_url</field>
+                              <value name="VALUE">
+                                <block type="setUrlParam" id="cl.lx{bYZZomu%StYJn5">
+                                  <value name="URL">
+                                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                      <field name="TEXT">https://sandbox.soft8soft.com/</field>
+                                    </shadow>
+                                    <block type="getUrlData" id=";YrR`m^xhg2YB~,./%2^">
+                                      <field name="KIND">URL</field>
+                                      <field name="PARENT">FALSE</field>
+                                    </block>
+                                  </value>
+                                  <value name="NAME">
+                                    <shadow type="text" id="#k7Sbgl$hl/394~1vR5G">
+                                      <field name="TEXT">image_url</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE">
+                                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                      <field name="TEXT"></field>
+                                    </shadow>
+                                    <block type="dictGet" id="odh9,I9[7:T6#8BnZ0Jm">
+                                      <value name="DICT">
+                                        <block type="loadedFile" id="Oks4}jeHfT7hCVc`+R5E"/>
+                                      </value>
+                                      <value name="KEY">
+                                        <shadow type="text" id="Putb0ciY5=o+q]/=t83V">
+                                          <field name="TEXT">link</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="openWebPage" id="EM+)?VKKq4G84zaWV}.B">
+                                  <field name="MODE">NO_RELOAD</field>
+                                  <value name="URL">
+                                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                      <field name="TEXT">https://www.soft8soft.com/</field>
+                                    </shadow>
+                                    <block type="variables_get" id=",f6d*U]zs!!|:pOPF{nb">
+                                      <field name="VAR" id="=AhL]2@zMA_2MTlwedf}">saved_conf_url</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="In89Dj73b-9rU(!s`;w5" x="-510" y="1090">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="u?f@Kvb)KLr6+`5~3)8{">
+          <field name="FIELDNAME">cam</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setScreenScale" id="P]R(oO9?RK])sPj8`vV~">
+          <value name="FACTOR">
+            <shadow type="math_number" id=":94;8puU,^BSR`5%C1B}">
+              <field name="NUM">3</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="T`1@`ki{=uxfPn2#eu|B">
+              <value name="VALUE">
+                <block type="objectList" id="+2V1#:LlExum6(-?Z`MY">
+                  <field name="FIELDNAME">cam</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id="_lxIj~LMUKemLNxbsKj_">
+                  <value name="VALUE">
+                    <block type="objectList" id="F62aQemCclq!uC?o7!Vr">
+                      <field name="FIELDNAME">bt_l</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="hide" id="_V%]BWncBb4Ai!v%vg-{">
+                      <value name="VALUE">
+                        <block type="objectList" id="Ggd?6+27j{mRB7_(_v6;">
+                          <field name="FIELDNAME">bt_r</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="controls_if" id="nvg8?WoWaBx2aJGO_L.3">
+                          <value name="IF0">
+                            <block type="logic_negate" id="BJdk?}D674jSy$`n{-Wz">
+                              <value name="BOOL">
+                                <block type="isObjectVisible" id="L(c*iNg3r%V5_*,o?u8*">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="mt{rpcT~E=@Y?P1PV!eP">
+                                      <field name="FIELDNAME">cam</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="setTimeout" id="1BYwTt;zUGKy_j(gUA5.">
+                              <value name="VALUE">
+                                <shadow type="math_number" id="#hmngr4[:6MH`8==rB^{">
+                                  <field name="NUM">0.01</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="downloadFile" id="x)91)7vX6cqbu$!Lk(Nc">
+                                  <value name="CONTENTS">
+                                    <shadow type="text">
+                                      <field name="TEXT">data:,</field>
+                                    </shadow>
+                                    <block type="takeScreenshot" id="6%p`rF?.|P;QFB-k}6`V">
+                                      <field name="TYPE">png</field>
+                                    </block>
+                                  </value>
+                                  <value name="FILENAME">
+                                    <shadow type="text" id="~e,EVfiU1T:Z#90d=z/o">
+                                      <field name="TEXT">screenshot.png</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setTimeout" id="(!HQlcNtsKkQ)NmF,[8E">
+                                      <value name="VALUE">
+                                        <shadow type="math_number" id=";+1[MRC;mYtqM@$@Exj5">
+                                          <field name="NUM">0.02</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="setScreenScale" id="gyQf=3(|!bOrg5Ks2jyx">
+                                          <value name="FACTOR">
+                                            <shadow type="math_number" id="9Dg4G~B4d!:c}4{fV*;[">
+                                              <field name="NUM">1</field>
+                                            </shadow>
+                                            <block type="nativeScreenScale" id="ldyAP,eQ9rk$dP_:^6S|"/>
+                                          </value>
+                                          <next>
+                                            <block type="show" id="5Tx499@Ej6Vko,4(8()0">
+                                              <value name="VALUE">
+                                                <block type="objectList" id="ahBgE^=.t*G23#R-@{oc">
+                                                  <field name="FIELDNAME">cam</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="show" id="^GU5qLq9e*BUl=.dUixg">
+                                                  <value name="VALUE">
+                                                    <block type="objectList" id="3;S;jR)jP#;pg6q;Wa@y">
+                                                      <field name="FIELDNAME">bt_l</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="show" id="?qJ7W%1X9D-_eKvS(;NT">
+                                                      <value name="VALUE">
+                                                        <block type="objectList" id="~Hj*bC2Vg25T!!5~w+)]">
+                                                          <field name="FIELDNAME">bt_r</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="bo.stqJQN[ZkDo.H{@AN" x="-530" y="1510">
+      <value name="VALUE">
+        <block type="objectList" id="koccLn:[G?m_e~yz2V_c">
+          <field name="FIELDNAME">cam</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="=y=P|=2tB*BvleVCeU8/">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="LD!g/RpR1tQi`WKOCfzJ">
+              <field name="FIELDNAME">cam</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id=").!dzdX`W~$hUfz(g)}j">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="l8Or:f?;BB.5zoCa,N-!">
+              <field name="FIELDNAME">cam</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenHovered" id="?G]si:xc?KRxTHJA.-0c">
+          <value name="VALUE">
+            <block type="objectList" id="b3s,=IhD4{N,Mz=|3hTM">
+              <field name="FIELDNAME">bt_l</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="]JEA]mn@9|w.!%k8l_p#">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <block type="objectList" id="P#9QL^-Au.g~{$**2Yv)">
+                  <field name="FIELDNAME">bt_l</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="Ey=}l8l.MmH1HhOA}9gR">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <block type="objectList" id="OT:Fz0o~Pa!@mXDu,q3S">
+                  <field name="FIELDNAME">bt_l</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenHovered" id="UDzoB-~E}dVRQG8,{T;E">
+              <value name="VALUE">
+                <block type="objectList" id="XSeup2{DK,dR0pX!LKb[">
+                  <field name="FIELDNAME">bt_r</field>
+                </block>
+              </value>
+              <statement name="DO_OVER">
+                <block type="outline" id="klpbmSSteQ1KPO*N/Yo2">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <block type="objectList" id="Da/pLqS~N1el-uLl01)P">
+                      <field name="FIELDNAME">bt_r</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="outline" id=":KxH7T4w_`UT2@68d,+H">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <block type="objectList" id="@$Vo0Wqsh/Hmvtfd+;@[">
+                      <field name="FIELDNAME">bt_r</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenHovered" id="g+:9*;u4!@rf2Jx^OY#L">
+                  <value name="VALUE">
+                    <block type="objectList" id="q,D5dA|oTw-gi1FRK.3~">
+                      <field name="FIELDNAME">mockup_01_logo</field>
+                    </block>
+                  </value>
+                  <statement name="DO_OVER">
+                    <block type="outline" id="~oap9-?Z7NiA,z7+Q6)/">
+                      <field name="DO_WHAT">ENABLE</field>
+                      <value name="TARGET">
+                        <block type="objectList" id="(584:E{[7SK%aK;exZb?">
+                          <field name="FIELDNAME">mockup_01_logo</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                  <statement name="DO_OUT">
+                    <block type="outline" id="[[L;ksRPsgM?n|CK0x[q">
+                      <field name="DO_WHAT">DISABLE</field>
+                      <value name="TARGET">
+                        <block type="objectList" id="-lt8h*%]/mQmJ;h%wdi2">
+                          <field name="FIELDNAME">mockup_01_logo</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="visibilidad" type="SecondaryTab" active="false" scrollx="2.2737367544323206e-13" scrolly="-128.84749986519418" scale="0.9922500000000001">
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="@Ug6Ty5oqy`[^?`d^p~O" x="110" y="70">
+      <value name="VALUE">
+        <block type="objectList" id="D~;,H{mPzS(A_nZM`f-S">
+          <field name="FIELDNAME">mockup_02</field>
+        </block>
+      </value>
+      <next>
+        <block type="hide" id="6=+u?Eh;ZmL.|cQ}+V:n">
+          <value name="VALUE">
+            <block type="objectList" id="rPOMYd#zUb;iITOfpc(R">
+              <field name="FIELDNAME">mockup_02_logo</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="{AzMPjDizM*n((qdnLEF" x="90" y="170">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="Y%TCFRRC^Qh6.@N9UM;Y">
+          <field name="FIELDNAME">bt_r</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_ifelse" id="t0$n^HcyuG^;6R}@h)M2">
+          <value name="IF0">
+            <block type="isObjectVisible" id="WgdI/Bzp:}GL745`.-uO">
+              <value name="VALUE">
+                <block type="objectList" id="*xJv96jKe?VK/JbFUCdR">
+                  <field name="FIELDNAME">mockup_01</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="show" id="sm_]/2hVTCu@;GhGYzM(">
+              <value name="VALUE">
+                <block type="objectList" id="*mRYt2;kgj@OQ(Hn%(2N">
+                  <field name="FIELDNAME">mockup_02</field>
+                </block>
+              </value>
+              <next>
+                <block type="show" id="`v90/Nz=hl~w`GS@5?#t">
+                  <value name="VALUE">
+                    <block type="objectList" id="]cchE?Btc?K#_/-TA(S%">
+                      <field name="FIELDNAME">mockup_02_logo</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="hide" id="qh}i-#|e}$y#;ah,6!TZ">
+                      <value name="VALUE">
+                        <block type="objectList" id="7ia~?HD[R|(7xZM@nL5=">
+                          <field name="FIELDNAME">mockup_01</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="hide" id="{Sr`n8?(!SqLLVpo+A/1">
+                          <value name="VALUE">
+                            <block type="objectList" id="Rc0MmA}YlQ4eVgEx3JQq">
+                              <field name="FIELDNAME">mockup_01_logo</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="show" id="~lrz`D(8L^[;c.ax}AC?">
+              <value name="VALUE">
+                <block type="objectList" id="z7)k!VKEUAwbmzi!;3z{">
+                  <field name="FIELDNAME">mockup_01</field>
+                </block>
+              </value>
+              <next>
+                <block type="show" id="4KikIazyFGMwHCgTZPRS">
+                  <value name="VALUE">
+                    <block type="objectList" id="KQd7BLgA3xg2ZrCcHdne">
+                      <field name="FIELDNAME">mockup_01_logo</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="hide" id="~Qx(I%C_/ThEFQt{Q9[2">
+                      <value name="VALUE">
+                        <block type="objectList" id="FQotJJ(+P:mfD?=q`M8*">
+                          <field name="FIELDNAME">mockup_02</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="hide" id=":@kcxwxnDriq]FYA(n-4">
+                          <value name="VALUE">
+                            <block type="objectList" id="m6S@E!rw_Om8@$gaiNPQ">
+                              <field name="FIELDNAME">mockup_02_logo</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <next>
+        <block type="whenClicked" id="x+O#p4D_wWqs$HGCZQi1">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+          <value name="VALUE">
+            <block type="objectList" id="kmO)wFoPv;EjNK,QtvTP">
+              <field name="FIELDNAME">bt_l</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="controls_ifelse" id="owe%U],C{JU[d`w~K*N4">
+              <value name="IF0">
+                <block type="isObjectVisible" id="OIua]IhA5ken@[,(RqI2">
+                  <value name="VALUE">
+                    <block type="objectList" id="tkQqmw7u4(HD:vBE1m`l">
+                      <field name="FIELDNAME">mockup_01</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="show" id="5Xb*)L61$(CqRCEE8H`s">
+                  <value name="VALUE">
+                    <block type="objectList" id="Y*=Svq|[S8Wrve3PI52A">
+                      <field name="FIELDNAME">mockup_02</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="~mP+RJwGS89}gG8%Vx1K">
+                      <value name="VALUE">
+                        <block type="objectList" id="xE82-%gC6NqxakeisC*D">
+                          <field name="FIELDNAME">mockup_02_logo</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="hide" id="Gf(.fm@66gw0gV0?H!TJ">
+                          <value name="VALUE">
+                            <block type="objectList" id=".L.J44rd^!1vlE:oq{xr">
+                              <field name="FIELDNAME">mockup_01</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="hide" id="a)yDz}SjTYA/LvKHNy8H">
+                              <value name="VALUE">
+                                <block type="objectList" id="PLaK]R;piE[,+)dTiPu)">
+                                  <field name="FIELDNAME">mockup_01_logo</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <statement name="ELSE">
+                <block type="show" id="7zB*AZC|,Er,t.cboeP_">
+                  <value name="VALUE">
+                    <block type="objectList" id=":6;Pj`5?Mk0CR$obuV@E">
+                      <field name="FIELDNAME">mockup_01</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="TY|Dzm([i=,Yb-i:*q]=">
+                      <value name="VALUE">
+                        <block type="objectList" id="^+x1Cpro-8r[4vJI6c,m">
+                          <field name="FIELDNAME">mockup_01_logo</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="hide" id="pB5TmF=Nr3|bnB#n!k;B">
+                          <value name="VALUE">
+                            <block type="objectList" id="0YWA4fp2/o)hPB0=V.,V">
+                              <field name="FIELDNAME">mockup_02</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="hide" id="n=:siKIiB_yaXz7cf1b-">
+                              <value name="VALUE">
+                                <block type="objectList" id="M?@0Xhe@G_})3oBHp*!R">
+                                  <field name="FIELDNAME">mockup_02_logo</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="573" viewport-y="29" viewport-w="512" viewport-h="302" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
